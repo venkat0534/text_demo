@@ -1,0 +1,28 @@
+ write a C program to find roots of quadratic equations
+#include<stdio.h>
+#include<math.h>
+main()
+{
+	int a,b,c,d;
+	float root1,root2;
+	printf("Enter the values of a,b,c\n");
+	scanf("%d %d %d",&a,&b,&c);
+	d=b*b-4*a*c;
+	if(d>=0)
+	{
+		root1=(-b+sqrt(d))/(2*a);
+		root2=(+b+sqrt(d))/(2*a);
+		printf("The roots of the values a=%d, b= %d,c= %d are\n  %f %f", a,b,c,root1,root2);
+		
+	}
+	else
+	printf("roots are imaginary");
+	}
+
+
+Output:
+Enter the values of a,b,c
+1 0 -9
+The roots of the values a=1, b= 0,c= -9 are
+  3.000000 3.000000
+--------------------------------

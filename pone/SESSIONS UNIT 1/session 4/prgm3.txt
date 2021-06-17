@@ -1,0 +1,21 @@
+ write a  C program to print two numbers
+
+#include<stdio.h>
+void main()
+{
+int a, b, add; //declaring Variables
+printf("Enter first number - ");
+scanf("%d",&a); //Accepting Number one
+printf("Enter second number - ");
+scanf("%d",&b); //Accepting Number two
+add = a+ b; //Adding both of them
+printf("The addition of numbers %d and %d is %d",a,b,add); //Printing the Result
+getch();
+
+	
+}
+Output:
+
+Enter first number - 24
+Enter second number - 34
+The addition of numbers 24 and 34 is 58

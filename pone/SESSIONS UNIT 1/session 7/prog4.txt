@@ -1,0 +1,30 @@
+#include<stdio.h>
+Write a c program to calculate the following sum:
+        sum=1-x2/2!+ x4/4!-x6/6!+x8/8!-x10/10!
+
+#include<math.h>
+void main()
+{
+  int x;
+  double sum=0;
+  int k=1,f,i,j;
+  printf("enter the value of x=");
+  scanf("%d",&x);
+  for(i=0;i<=10;i=i+2)
+  {
+     f=1;
+     for(j=1;j<=i;j++)
+     {
+        f=f*j;
+     }
+    sum=sum+k*pow(x,i)/f;
+    k=-k;
+  }
+
+Output:
+
+enter the value of x=3
+sum=-0.991049
+--------------------------------
+  printf("sum=%lf",sum);
+}

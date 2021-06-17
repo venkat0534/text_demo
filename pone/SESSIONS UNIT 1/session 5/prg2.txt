@@ -1,0 +1,17 @@
+write a Cprogram to find size of datatypes
+#include<stdio.h>
+main()
+{
+	int i=10;
+	float f=25.005;
+	char name[]="welcome";
+	printf("\n  size of integer is...%d",sizeof(i));
+	printf("\n  size of float is...%d",sizeof(f));
+	printf("\n  size of character is...%d",sizeof(name));
+	
+}
+Output:
+size of integer is...4
+ size of integer is...4
+ size of integer is...8
+--------------------------------

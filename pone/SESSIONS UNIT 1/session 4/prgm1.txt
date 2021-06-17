@@ -1,0 +1,12 @@
+
+ write a simple c program to print Hello World on console
+
+
+#include<stdio.h>
+void main()
+{
+	printf("Hello World");
+}
+
+Output:
+Hello World
